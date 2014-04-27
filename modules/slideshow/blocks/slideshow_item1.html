@@ -1,0 +1,24 @@
+<div id="mySlideCarousel" class="carousel slide slideshow" data-ride="carousel">
+    <ol class="carousel-indicators">
+    	<{foreach item=item from=$block.items}>
+        <li <{if $item.item_default == 1}>class="active" <{/if}>data-slide-to="0" data-target="#mySlideCarousel"></li>
+        <li data-slide-to="1" data-target="#mySlideCarousel"></li>
+        <{/foreach}>
+    </ol>
+    <div class="carousel-inner">
+    	<{foreach item=item from=$block.items}>
+        <div class="item<{if $item.item_default == 1}> active<{/if}>">
+        	<img src="<{$item.imgurl}>" alt="<{$item.item_title}>">
+            <div class="carousel-caption hidden-xs">
+                <h2><{$item.item_title}></h2>
+                <p><{$item.item_text}></p>
+                <p>
+                	<a title="<{$item.item_title}>" href="<{$item.item_link}>" class="btn btn-large btn-primary">Read More</a>
+                </p>
+            </div>
+        </div>
+        <{/foreach}>
+    </div>
+    <a href="#mySlideCarousel" data-slide="prev" class="left carousel-control"><span class="icon-prev"></span></a>
+    <a href="#mySlideCarousel" data-slide="next" class="right carousel-control"><span class="icon-next"></span></a>
+</div>
