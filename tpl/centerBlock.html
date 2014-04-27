@@ -1,10 +1,14 @@
 <{if $xoBlocks.page_topcenter}>
-    <div class="col-sm-12 col-md-12">
-        <{foreach item=block from=$xoBlocks.page_topcenter}>
-        	<div class="xoops-blocks">
-                <{if $block.title}><h4><{$block.title}></h4><{/if}>
-                <{$block.content}>
-            </div>
-        <{/foreach}>
-   	</div>
+<div class="col-sm-12 col-md-12">
+	<{foreach item=block from=$xoBlocks.page_topcenter}>
+    <div class="panel panel-default">
+        <{if $block.title}>
+        <div class="panel-heading">
+            <h3 class="panel-title"><{$block.title}></h3>
+        </div>
+        <{/if}>
+        <div class="panel-body"><{$block.content}></div>
+    </div>
+    <{/foreach}>
+</div>
 <{/if}>

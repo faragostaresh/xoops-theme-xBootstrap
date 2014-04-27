@@ -52,10 +52,11 @@ div.slideshow .item img{display:inline-block;}
 
 div.maincontainer{margin-top:20px; margin-bottom:20px;}
 div.home-message{background: #FFF; padding-top:5px; border-left: 3px solid #9C6; margin-top:-60px; position:relative; z-index:5;}
-div.bottom-blocks{background: url(images/cover.jpg) 50% 50% no-repeat fixed; background-size:cover; margin-top: 20px; padding: 20px 0 20px 0;}
+div.bottom-blocks{background: url(../images/cover.jpg) 50% 50% no-repeat fixed; background-size:cover; margin-top: 20px; padding: 20px 0 20px 0;}
 
 #xo-footer{background:#111; color:#EAEAEA; text-align: center; padding: 20px;}
 
+.navbar-wrapper h1 {padding: 0; margin: 0;}
 /* 2. XOOPS Codes */
 .xoopsQuote{padding:10px 20px; margin:0 0 20px;border-left:5px solid #eeeeee; font-style:italic;}
 .xoopsCode {background: #FAFAFA; padding: 5px; overflow-x: scroll; border: 1px solid #EEE;}
@@ -85,7 +86,7 @@ section.news-item{margin-bottom:20px;}
 
 div.news-header{position:relative;}
 div.news-header img{position:relative; min-width:100%; max-width:100%;}
-div.news-header > h2.news-title{background:url(images/alpha.png); position:absolute; bottom:10%; left:0; padding:10px; margin:0; color:#FFF; font-size:1.8em; z-index:5;}
+div.news-header > h2.news-title{background:url(../images/alpha.png); position:absolute; bottom:10%; left:0; padding:10px; margin:0; color:#FFF; font-size:1.8em; z-index:5;}
 div.news-header > h2.news-title > a{color:#CF9;}
 div.news-header > h2.news-title > a:after{content:": "}
 h2.news-no-image{font-size:1.5em; margin:0; line-height:inherit;}
@@ -129,7 +130,7 @@ div.xoops-comment-author.col-md-2{padding-right:0}
 
 div.xoops-comment-text > div{display: none;}
 div.xoops-comment-text p.message-text{background:#EAEAEA; padding:10px; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; position:relative;}
-div.xoops-comment-text p.message-text:after{content:""; display:block; position:absolute; width:20px; height:20px; top:0; left:-10px; background:url(images/comment-arrow.png) 50% 50% no-repeat; background-size:contain;}
+div.xoops-comment-text p.message-text:after{content:""; display:block; position:absolute; width:20px; height:20px; top:0; left:-10px; background:url(../images/comment-arrow.png) 50% 50% no-repeat; background-size:contain;}
 
 div.xoops-comment-form{}
 div.xoops-comment-form input[type=text], div.xoops-comment-form textarea{background:#EEE; padding:5px; min-width:100%; border:1px solid #DDD; margin-bottom:10px; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;}
@@ -144,7 +145,7 @@ div.modal-dialog.comments-modal{}
 div.comments-nav{padding:10px;}
 
 /* 4.5. System Site Closed */
-.site-closed-body{background:url(images/background-site-closed.jpg) top center no-repeat fixed;}
+.site-closed-body{background:url(../images/background-site-closed.jpg) top center no-repeat fixed;}
 div.xoops-site-closed{margin-top:10%;}
 div.site-closed-logo{margin-bottom:5%;}
 div.xoops-site-closed-container{background:#FFF; padding:10px; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; box-shadow:0 0 10px #333, 0 0 10px #333;}
@@ -191,7 +192,7 @@ div.orderbyicons ul li{display:inline-block; margin:0 10px 0 10px; line-height:3
 div.orderbyicons a{color:#333; font-size:1.2em;}
 
 div.album-thumb{max-height:140px; margin-bottom:20px; overflow:hidden; position:relative;}
-ul.adminlinks{background:url(images/alpha.png); color:#EAEAEA; font-size:0.9em; position:absolute; top:0; right:-300px; height:100%; -moz-transition: all linear 300ms; -webkit-transition: all linear 300ms; transition: all linear 300ms;}
+ul.adminlinks{background:url(../images/alpha.png); color:#EAEAEA; font-size:0.9em; position:absolute; top:0; right:-300px; height:100%; -moz-transition: all linear 300ms; -webkit-transition: all linear 300ms; transition: all linear 300ms;}
 div.album-thumb:hover > ul.adminlinks{right:0; text-align:center;}
 ul.adminlinks > li{padding:2px 5px 2px 5px; position:relative;}
 ul.adminlinks > li > a{color: #FFF;}
@@ -199,9 +200,9 @@ ul.adminlinks > li > a{color: #FFF;}
 div.photoRating{position:absolute; bottom:0; padding:3px; background:#FFF; opacity:0.8; border-radius:0 5px 0 0;}
 
 div.photo-nav-controls{}
-div.photo-nav-controls ul{background:url(images/alpha.png); position:relative; right:5px; color:#FFF; font-weight:bold; border-radius:5px 5px 0 0; -moz-border-radius:5px 5px 0 0; -webkit-border-radius:5px 5px 0 0; margin:0; overflow:hidden;}
+div.photo-nav-controls ul{background:url(../images/alpha.png); position:relative; right:5px; color:#FFF; font-weight:bold; border-radius:5px 5px 0 0; -moz-border-radius:5px 5px 0 0; -webkit-border-radius:5px 5px 0 0; margin:0; overflow:hidden;}
 div.photo-nav-controls ul li{display:inline-table;}
-div.photo-nav-controls ul li.nav-btn{background:url(images/alpha.png); width:30px; font-size:1.5em;}
+div.photo-nav-controls ul li.nav-btn{background:url(../images/alpha.png); width:30px; font-size:1.5em;}
 div.photo-nav-controls ul li a{color:#000; text-shadow:1px 1px 0 #333;}
 div.photo-nav-controls ul li.small{font-size:0.9em; margin:0 5px 0 5px;}
 div.gallery-single-photo{}
