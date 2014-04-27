@@ -21,7 +21,7 @@
 <link rel="stylesheet" type="text/css" href="<{xoImgUrl}>css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="<{xoImgUrl}>css/xoops.css">
 <link rel="stylesheet" type="text/css" href="<{xoImgUrl}>css/reset.css">
-<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_themecss}>">
+<link rel="stylesheet" type="text/css" media="all" href="<{xoImgUrl}>css/style.css">
 
 <link rel="alternate" type="application/rss+xml" title="" href="<{xoAppUrl backend.php}>">
 
@@ -41,57 +41,43 @@
 <![endif]-->
 </head>
 <body id="<{$xoops_dirname}>">
-
-<{includeq file="$theme_name/tpl/nav-menu.html"}>
-
-<{includeq file="$theme_name/tpl/slider.html"}>
-
-<div class="container maincontainer">
-
-<{if $xoops_dirname == "system"}>
-    <div class="aligncenter home-message">
-      <h2>About Us</h2>
-      <p class="lead"><{$xoops_meta_description}></p>
-      <p><a href="javascript:;" class="btn btn-md btn-success">Learn More...</a></p>
-    </div><!-- .home-message -->
-<{/if}>
-
-<div class="row">
-    <{includeq file="$theme_name/tpl/leftBlock.html"}>
-    
-    <{includeq file="$theme_name/tpl/content-zone.html"}>
-    
-    <{includeq file="$theme_name/tpl/rightBlock.html"}>
-</div>
-
-</div><!-- .maincontainer -->
-
-<{if $xoBlocks.page_bottomcenter || $xoBlocks.page_bottomright || $xoBlocks.page_bottomleft}>
-    <div class="bottom-blocks">
+    <header id="xo-header">
+        <{includeq file="$theme_name/tpl/nav-menu.html"}>
+        <{includeq file="$theme_name/tpl/slider.html"}>
+    </header>
+    <section id="xo-section">
+        <div class="container maincontainer">
+            <{if $xoops_dirname == "system"}>
+            <div class="aligncenter home-message">
+                <h2>About Us</h2>
+                <p class="lead"><{$xoops_meta_description}></p>
+                <p><a href="javascript:;" class="btn btn-md btn-success">Learn More...</a></p>
+            </div><!-- .home-message -->
+            <{/if}>
+            <div class="row">
+                <{includeq file="$theme_name/tpl/leftBlock.html"}>
+                <{includeq file="$theme_name/tpl/content-zone.html"}>
+                <{includeq file="$theme_name/tpl/rightBlock.html"}>
+            </div>
+        </div><!-- .maincontainer -->
+        <{if $xoBlocks.page_bottomcenter || $xoBlocks.page_bottomright || $xoBlocks.page_bottomleft}>
+        <div class="bottom-blocks">
+            <div class="container">
+                <div class="row">
+                    <{includeq file="$theme_name/tpl/leftBottom.html"}>
+                    <{includeq file="$theme_name/tpl/centerBottom.html"}>
+                    <{includeq file="$theme_name/tpl/rightBottom.html"}>
+                </div>
+            </div>
+        </div><!-- .bottom-blocks -->
+        <{/if}>
+    </section>
+    <footer id="xo-footer">
         <div class="container">
             <div class="row">
-                <{includeq file="$theme_name/tpl/leftBottom.html"}>
-                
-                <{includeq file="$theme_name/tpl/centerBottom.html"}>
-                
-                <{includeq file="$theme_name/tpl/rightBottom.html"}>
+                <div class="col-md-12"><{$xoops_footer}></div>
             </div>
         </div>
-    </div><!-- .bottom-blocks -->
-<{/if}>
-
-<footer class="footer">
-    <h3>
-        <{$xoops_footer}>
-        <a href="http://xoops.org" title="Design by: XOOPS UI/UX Team" target="_blank" class="credits visible-md visible-sm visible-lg">
-            <img src="<{xoImgUrl}>images/favicon.png" alt="Design by: XOOPS UI/UX Team">
-        </a>
-    </h3>
-</footer>
-<div class="aligncenter comments-nav visible-xs">
-    <a href="http://xoops.org" title="Design by: XOOPS UI/UX Team" target="_blank">
-        <img src="<{xoImgUrl}>images/favicon.png" alt="Design by: XOOPS UI/UX Team">
-    </a>
-</div>
+    </footer>
 </body>
 </html>
